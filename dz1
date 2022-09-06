@@ -1,0 +1,114 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    setlocale(0, "");
+    cout << "Люба\n";
+}
+
+Задание 2 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	float a, b;
+	cout << "Напашите число\n";
+	cin >> a >> b;
+	cout << a - b << endl;
+	cout << a + b << endl;
+	cout << a * b << endl;
+	cout << a / b << endl; 
+}
+
+Задание 3
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	float b, c;
+	cin >> b >> c;
+	float x = (-c) / b;
+	cout << "bx + c = 0\n" << x;
+}
+
+Задание 4 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	float a , b, c;
+	cin >> a >> b >> c;
+	float D = (b * b) - (4 * a * c);
+	if (D > 0) {
+		float x1 = ((-b) + sqrt(D)) / (2 *a);
+		float x2 = ((-b) - sqrt(D)) / (2 * a);
+		cout << x1 << endl;
+		cout << x2 << endl;
+	}
+}
+
+Задание 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    setlocale(0, "");
+    int answer1, answer2, answer3;
+    cout << "Сейчас день?(1/2)" << endl;
+    cout << "1.Да" << endl;
+    cout << "2.Нет" << endl;
+    cin >> answer1;
+
+    cout << "Лампа горит?(1/2)" << endl;
+    cout << "1.Да" << endl;
+    cout << "2.Нет" << endl;
+    cin >> answer2;
+
+    cout << "Шторы закрыты?(1/2)" << endl;
+    cout << "1.Да" << endl;
+    cout << "2.Нет" << endl;
+    cin >> answer3;
+
+
+    if (answer1 == 1 && answer3 == 2 && answer2 == 2 ) {
+        cout << "В комнате светло" << endl;
+    }
+
+    else if (answer1 == 1 && answer3 == 1 && answer2 == 2) {
+        cout << "В комнате темно" << endl;
+    }
+
+    else if (answer1 == 1 && answer3 == 1 && answer2 == 1) {
+        cout << "В комнате светло" << endl;
+    }
+
+    else if (answer1 == 2 && answer2 == 2 && answer3 == 1) {
+        cout << "В комнате темно" << endl;
+    }
+    else if (answer1 == 2 && answer2 == 1 && answer3 == 1) {
+        cout << "В комнате светло" << endl;
+        return 0;
+    }
+    else if (answer1 == 2 && answer2 == 1 && answer3 == 2) {
+        cout << "В комнате светло" << endl;
+        return 0;
+    }
+    else if (answer1 == 2 && answer2 == 2 && answer3 == 1) {
+        cout << "В комнате темно" << endl;
+        return 0;
+
+    }
+    else if (answer1 == 2 && answer2 == 2 && answer3 == 2) {
+        cout << "В комнате темно " << endl;
+        return 0;
+}
